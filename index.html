@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="invoice-form">
+    <h2> Create Invoice</h2>
+        <h2>Invoice Details</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="billVendor">Bill Vendor*</label>
+                    <select id="billVendor" required>
+                        <option value="vendor1">select vendor</option>
+                        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="billinvoiceType">BillInvoice Type*</label>
+                    <select id="billinvoiceType" required>
+                        <option value="type1">Select Bill Invoice Type</option>
+                        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description*</label>
+                    <input type="text" id="description" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="poNumber">PO Number*</label>
+                    <input type="text" id="poNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hsnCode">HSN Code*</label>
+                    <input type="text" id="hsnCode" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dueDate">Due Date*</label>
+                    <input type="date" id="dueDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="invoiceNo">Invoice No*</label>
+                    <input type="text" id="invoiceNo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="uploadInvoices">Upload Invoices</label>
+                    <input type="file" id="uploadInvoices" required>
+                </div>
+            </div>
+
+            <h2>Invoice Calculation Details</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="invoiceAmount">Invoice Amount*</label>
+                    <input type="text" id="invoiceAmount" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cgst">CGST*</label>
+                    <input type="text" id="cgst" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sgst">SGST*</label>
+                    <input type="text" id="sgst" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="igst">IGST*</label>
+                    <input type="text" id="igst" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tds">TDS:</label>
+                    <input type="text" id="tds">
+                </div>
+
+                <div class="form-group">
+                    <label for="totalAmount">Total Amount*</label>
+                    <input type="text" id="totalAmount" required>
+                </div>
+            </div>
+<center>
+            <button type="submit">Create Invoice</button>
+            <button type="reset" class="reset-btn">Reset</button>
+</center>
+        </form>
+    </div>
+</body>
+</html>
